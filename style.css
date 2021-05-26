@@ -1,0 +1,31 @@
+* {
+  font-family: 'minecraftia', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-image: url('a_minecraft_background.jpg');
+  background-repeat: no-repeat;
+}
+
+.page-title {
+  font-size: 5rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-around;
+  text-shadow: 4px 4px #444444;
+  color: #EEEEEE;
+}
+
+form {
+  font-size: 2rem;
+  color: #EEEEEE;
+  text-shadow: 2px 2px #444444;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+}
+form input {
+  font-size: 2rem;
+  margin-left: .5rem;
+}

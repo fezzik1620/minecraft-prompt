@@ -1,7 +1,0 @@
-version: "3.8"
-services:
-  minecraft-prompt:
-    build: .
-    volumes:
-      - .:/usr/src/minecraft-prompt
-    working_dir: /usr/src/minecraft-prompt

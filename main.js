@@ -26,7 +26,8 @@ function createWindow () {
     debugger
     mainWindow.minimize()
     mainWindow.hide()
-    let hackPath = path.join(process.env.APPDATA, '.minecraft', 'hack_with_input.bat')
+    const pathRoot = process.platform === "win32" ? process.env.APPDATA : process.env.HOME
+    const hackPath = path.join(pathRoot, '.minecraft', 'hack_with_input.bat')
     child_process.execFile(hackPath, [username], (err, stdout, stderr) => {
       console.log(err)
       console.log(stdout)
